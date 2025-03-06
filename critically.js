@@ -46,3 +46,11 @@ function incrementAgeCopy(data) {
 }
 
 console.log(incrementAgeCopy(data));
+console.log(data);
+
+// since the Date object is an object, what would happen if 
+// we modified it in the copy of the object created in the second function using setTime() or another method?
+
+// it would affect the original Date object as well if i used a shallow copy
+// but i allready used a deep copy methode JSON.stringify and JSON.parse .
+//so any modifications to the Date object in the copy will not affect the original Date object
